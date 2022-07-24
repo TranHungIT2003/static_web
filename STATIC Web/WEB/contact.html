@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>SB Bookstore</title>
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <div class="logo">
+                <img src="1658578721524.png" alt="SB Bookstore">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="novels.html">Novels</a>
+                <a href="novels.html">Manga</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact">
+            <div class="heading">Contact Us</div>
+            <div class="form">
+              <form>
+                <div class="dropdown">
+                    <select name='purpose' id="purpose">
+                        <option value='' selected>Your Purpose</option>
+                        <option value='' class="choice">Selling Books</option>
+                        <option value='' class="choice">Buying Books</option>
+                    </select>
+                </div>
+                <div class="formfill">
+                    <label for="name">Your name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Your email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="phone">Your phone number:</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                </div>
+                <div class="checkbox">
+                    <h1>How can we contact you:</h1>
+                    <input type="checkbox" id="choice1" name="choice1" value="Email">
+                    <label for="choice1"> By Email</label><br>
+                    <input type="checkbox" id="choice2" name="choice2" value="Phone">
+                    <label for="choice2"> By Phone</label><br>
+                </div>
+                <div class="radio">
+                    <h1>Do you want to receive our weekly newsletter:</h1>
+                    <input type="radio" id="yes" name="choice1" value="Yes" checked>
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="choice2" value="No">
+                    <label for="No">No</label><br>
+                    <h1>Note</h1>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="button">
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">
+                </div>
+              </form>   
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer container">
+            <nav>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Copyright</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
