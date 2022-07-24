@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #00ff88;
+    min-height: 8vh;
+    align-items:center ;
+}
+
+
+header .logo img {
+    height: 90px;
+    align-items: center;
+    padding-left: 250px;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+header nav a {
+    font-size: 17px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    background-color: #66ffee;
+    padding: 10px;
+    border-right: 1px solid #00ff88;
+}
+
+header nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+header nav .active {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 100px;
+}
+
+#contact {
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 100px;
+}
+
+#contact .heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: #00ff88;
+    text-align: center;
+    border-top-left-radius: 1cm;
+    border-top-right-radius: 1cm;
+}
+
+#contact .form {
+    background-color: #66ffee;
+    border-bottom-left-radius: 1cm;
+    border-bottom-right-radius: 1cm;
+}
+
+#contact .dropdown {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#contact #purpose {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact .dropdown .choice {
+    background-color: #66ffee;
+    font-weight: bold;
+}
+
+#contact .dropdown option {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#contact .formfill {
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.formfill #name {
+    height: 30px;
+    width: 1455px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.formfill #email {
+    height: 30px;
+    width: 1455px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.formfill #phone {
+    height: 30px;
+    width: 1455px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#contact .checkbox {
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#contact .radio {
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#message {
+    height: 100px;
+    width: 1455px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#contact .button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#contact #submit {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00ff88;
+    padding: 5px;
+}
+
+#contact #reset {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00ff88;
+    padding: 5px;
+}
+
+
+footer {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+footer nav a {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    line-height: 1cm;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    background-color: grey;
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 960px) {
+    header .logo img {
+        height: 90px;
+        align-items: center;
+        padding-left: 65px;
+    }
+
+    header nav {
+        width: 100%;
+        background:#00ff88;
+        position: absolute;
+        top: 75px;
+        right:0;
+        z-index:2;
+        justify-content: center;
+        display: block;
+    }
+
+    header nav a {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    main {
+        margin-top: 100px;
+        height: 800px;
+    }
+
+    #contact {
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 70px;
+    }
+    
+    #contact .heading {
+        font-family: 'Nunito', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: #00ff88;
+        text-align: center;
+        border-top-left-radius: 1cm;
+        border-top-right-radius: 1cm;
+    }
+
+    #contact .formfill {
+        padding: 5px;
+        padding-left: 20px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .formfill #name {
+        height: 25px;
+        width: 350px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+    }
+    
+    .formfill #email {
+        height: 25px;
+        width: 350px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+    }
+    
+    .formfill #phone {
+        height: 25px;
+        width: 350px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+    }
+
+    #contact .checkbox {
+        padding: 5px;
+        padding-left: 20px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #contact h1 {
+        font-size: 20px;
+    }
+    
+    #contact .radio {
+        padding: 5px;
+        padding-left: 20px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #message {
+        height: 100px;
+        width: 350px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+    }
+
+
+    
+    footer {
+        background-color: black;
+        height: 200px;
+        text-align: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #00ff88;
+    min-height: 8vh;
+    align-items:center ;
+}
+
+
+header .logo img {
+    height: 90px;
+    align-items: center;
+    padding-left: 250px;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+header nav a {
+    font-size: 17px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    background-color: #66ffee;
+    padding: 10px;
+    border-right: 1px solid #00ff88;
+}
+
+header nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+header nav .active {
+    text-decoration: underline;
+}
+
+.detail {
+    padding: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    text-align: center;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #66ffee;
+    text-decoration: underline;
+}
+
+.detail .all-img {
+    overflow: hidden;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.detail .big-img img {
+    height: 600px;
+}
+
+.detail .small-img {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.detail .small-img img {
+    display: block;
+    height: 200px;
+}
+
+.price {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.price #button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #00ff88;
+    padding: 15px;
+    border-radius: 2cm;
+}
+
+.info {
+    padding-top: 20px;
+}
+
+.info h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.info p {
+    font-size: 30px;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+footer nav a {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    line-height: 1cm;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    background-color: grey;
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 960px) {
+    header .logo img {
+        height: 90px;
+        align-items: center;
+        padding-left: 65px;
+    }
+
+    header nav {
+        width: 100%;
+        background:#00ff88;
+        position: absolute;
+        top: 75px;
+        right:0;
+        z-index:2;
+        justify-content: center;
+        display: block;
+    }
+
+    header nav a {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    main {
+        margin-top: 105px;
+        height: 1500px;
+    }
+
+    .detail {
+        padding: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    ul.breadcrumb {
+        padding-top: 55px;
+        list-style: none;
+        background-color: #eee;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+
+    .detail .all-img {
+        overflow: hidden;
+        display: block;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detail .big-img img {
+        height: 540px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail .small-img {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .detail .small-img img {
+        display: inline-block;
+        height: 140px;
+    }
+
+    .price {
+        font-family: 'Nunito', sans-serif;
+        font-size: 50px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .price #button {
+        font-family: 'Nunito', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: #00ff88;
+        padding: 10px;
+        border-radius: 2cm;
+    }
+    
+    .info {
+        padding-top: 20px;
+    }
+    
+    .info h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .info p {
+        font-size: 20px;
+    }
+    
+    footer {
+        background-color: black;
+        height: 200px;
+        text-align: center;
+        align-items: center;
+    }
+}
